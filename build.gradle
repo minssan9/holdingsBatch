@@ -22,25 +22,22 @@ repositories {
 
 dependencies {
 //	spring
-//	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	implementation 'org.springframework.boot:spring-boot-starter-batch'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
 //	custom
 //	implementation 'org.hibernate:hibernate-agroal:5.4.26.Final'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter'
 	implementation 'org.slf4j:slf4j-api:1.7.25'
 
-
-//	complie
-	compile group: 'oracle', name: 'ojdbc6', version: '11.2.0.3'
-	compile 'mysql:mysql-connector-java'
-
-	compile 'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2'
-	compile 'org.springframework.boot:spring-boot-starter-jdbc'
-	compile('org.springframework.boot:spring-boot-starter-batch')
-//	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	implementation group: 'oracle', name: 'ojdbc6', version: '11.2.0.3'
+	implementation 'mysql:mysql-connector-java'
 
 
-//	compile 'com.oracle:ojdbc7:12.1.0.2'
+
+
 	compileOnly 'org.projectlombok:lombok'
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
